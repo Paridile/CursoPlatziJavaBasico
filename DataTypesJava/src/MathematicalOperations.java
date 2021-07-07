@@ -22,6 +22,6 @@ public class MathematicalOperations {
 
         //volumen de esfera
         System.out.println((4/3) * Math.PI * Math.pow(y,3));
-        
+
     }
 }
