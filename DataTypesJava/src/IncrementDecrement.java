@@ -7,7 +7,6 @@ public class IncrementDecrement {
         System.out.println(lives);
         lives++;
         System.out.println(lives);
-
         //Prefija
         //lives++;
         //postfijo
