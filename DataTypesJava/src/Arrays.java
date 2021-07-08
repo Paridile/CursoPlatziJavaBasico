@@ -1,6 +1,6 @@
 public class Arrays {
     public static void main(String[] args) {
-        String[] androidVersion = new String[17];
+        String[] androidVersion = new String[4];
         String days[] = new String[7];
         String[][] cities = new String[4][2];
         int [][][] numbers = new int[2][2][2];
@@ -10,10 +10,15 @@ public class Arrays {
         androidVersion[2] = "Cupcake";
         androidVersion[3] = "Donut";
 
-        System.out.println(androidVersion[0]);
-        System.out.println(androidVersion[1]);
-        System.out.println(androidVersion[2]);
-        System.out.println(androidVersion[3]);
+        for (int i = 0; i < androidVersion.length; i++) {
+            System.out.println(androidVersion[i]);
+        }
+
+        System.out.println();
+
+        for (String version:androidVersion) {
+            System.out.println(version);
+        }
 
         cities[0][0] = "Colombia";
         cities[0][1] = "Medellin";
@@ -24,20 +29,45 @@ public class Arrays {
         cities[3][0] = "México";
         cities[3][1] = "CDMX";
 
-        System.out.println(cities[0][0]);
-        System.out.println(cities[0][1]);
-        System.out.println(cities[1][0]);
-        System.out.println(cities[1][1]);
-        System.out.println(cities[2][0]);
-        System.out.println(cities[2][1]);
-        System.out.println(cities[3][0]);
-        System.out.println(cities[3][1]);
+        for (int i = 0; i < cities.length ; i++) {
+            for (int j = 0; j < cities[i].length; j++) {
+                System.out.println(cities[i][j]);
+            }
+        }
+        System.out.println();
+
+        for (String[] city:cities) {
+            for (String c: city) {
+                System.out.println(c);
+            }
+        }
+
+        System.out.println();
 
         String [][][][] animals = new String[2][3][2][2];
         animals[1][0][0][1] = "Monkey";
+
+        for (int i = 0; i < animals.length; i++) {
+            for (int j = 0; j < animals[i].length; j++) {
+                for (int k = 0; k < animals[i][j].length; k++) {
+                    for (int l = 0; l < animals[i][j][k].length; l++) {
+                        System.out.println(animals[i][j][k][l]);
+                    }
+                }
+            }
+        }
         System.out.println();
         System.out.println();
-        System.out.println(animals[1][0][0][1]);
+
+        for (String[][][] i:animals) {
+            for (String [][] j: i) {
+                for (String[] k: j) {
+                    for (String l: k) {
+                        System.out.println(l);
+                    }
+                }
+            }
+        }
 
 
     }
