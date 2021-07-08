@@ -8,6 +8,7 @@ public class Funciones {
         System.out.println("$200 MXN a dolares " +  convertToDolar(200,"MXN"));
         System.out.println("$200 COP a dolares " +  convertToDolar(200,"COP"));
     }
+
     public static double circleArea(double radio) {
         return Math.PI * Math.pow(radio,2);
     }
@@ -17,6 +18,13 @@ public class Funciones {
     public static double sphereVolume(double radio) {
         return (4/3) * Math.PI * Math.pow(radio,3);
     }
+    /**
+     * Descripcion: Funcion que especificando su moneda convierte una cantidad de dinero a dolares
+     * @param quantity Cantidad de dinero
+     * @param currency Tipo de moned, solo acepta MXN o COP
+     * @return quantity Devuelve la cantidad actualizada en dolares
+     *
+     * */
     public static double convertToDolar(double quantity, String currency) {
         //MXN COP
         switch (currency) {
