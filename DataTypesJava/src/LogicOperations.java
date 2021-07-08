@@ -24,7 +24,5 @@ public class LogicOperations {
         }else if (a <= b) {
             System.out.println("a es menor o igual a b");
         }
-
-
 }
 }
